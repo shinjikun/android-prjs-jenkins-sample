@@ -1,0 +1,19 @@
+package org.ikariworks.palindrome.prj.test;
+
+import android.test.InstrumentationTestCase;
+
+public class TestMain extends InstrumentationTestCase {
+
+	public TestMain(String name) {
+		super(name);
+	}
+
+	protected void setUp() throws Exception {
+		super.setUp();
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+
+}
