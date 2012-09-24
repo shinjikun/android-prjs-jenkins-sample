@@ -41,7 +41,7 @@ public class PalindromePrjActivity extends Activity implements OnClickListener {
 			boolean result =isPalindrome(str);
 			
 			if(result){
-				txtResult.setText("Palindrome");	
+				txtResult.setText("Yes it is");	
 			}
 			else {
 				txtResult.setText("No it isn't");
