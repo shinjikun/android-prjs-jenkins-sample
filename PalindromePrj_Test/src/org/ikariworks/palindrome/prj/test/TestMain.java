@@ -1,13 +1,7 @@
 package org.ikariworks.palindrome.prj.test;
-
-
 import org.ikariworks.palindrome.prj.PalindromePrjActivity;
-
 import com.jayway.android.robotium.solo.Solo;
-
 import android.test.ActivityInstrumentationTestCase2;
-
-
 public class TestMain extends
 		ActivityInstrumentationTestCase2<PalindromePrjActivity> {
 		private Solo solo;
@@ -28,6 +22,12 @@ public class TestMain extends
 		solo.clickOnButton("Check!!!");
 		assertTrue(solo.searchText("Yes it is"));
 	}
+	public void testSecondConditionSuccess(){
+		solo.enterText(0, "yasay");
+		solo.clickOnButton("Check!!!");
+		assertTrue(solo.searchText("Yes it is"));
+	}
+	
 	public void testFirstConditionFail(){
 		solo.enterText(0, "hello");
 		solo.clickOnButton("Check!!!");
